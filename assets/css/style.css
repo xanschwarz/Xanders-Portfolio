@@ -1,0 +1,41 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1%;
+    background-color:#26363b;
+    color:white;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    min-width:300px;
+}
+
+/* alternatively you could do the below instead of using min-width for the nav ul. */
+/* nav li {
+    margin-right:75px;
+} */
+
+nav a {
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:blanchedalmond;
+}
+
+.myImage {
+    text-align: center;
+}
+
+.myImage img {
+    height: 400px;
+}
