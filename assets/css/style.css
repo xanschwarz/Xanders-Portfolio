@@ -1,10 +1,13 @@
+/* Note the following color scheme, from darkest to lightest.
+0D1321      1D2D44      3E5C76      748CAB      F0EBD8 */
+
 header {
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding:1%;
-    background-color:#26363b;
-    color:white;
+    background-color:#0D1321;
+    color:#F0EBD8;
 }
 
 h1 {
@@ -23,13 +26,13 @@ nav ul {
 } */
 
 nav a {
-    color:white;
+    color:#F0EBD8;
     font-weight: bold;
     text-decoration: none;
 }
 
 nav a:hover {
-    color:blanchedalmond;
+    color:#748CAB;
 }
 
 .myImage {
@@ -38,4 +41,38 @@ nav a:hover {
 
 .myImage img {
     height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display:flex;
+    justify-content:center;
+    padding:1%;
+    background-color:#0D1321;
+}
+
+footer ul {
+    display:flex;
+    justify-content: space-between;
+    min-width:600px;
+}
+
+footer a, li {
+    color:#F0EBD8;
+    font-weight: bold;
+    text-decoration: none;
 }
