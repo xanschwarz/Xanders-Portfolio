@@ -35,6 +35,11 @@ nav a:hover {
     color:#748CAB;
 }
 
+body {
+    background-color: #3E5C76;
+    color: #F0EBD8;
+}
+
 .myImage {
     text-align: center;
 }
@@ -42,7 +47,6 @@ nav a:hover {
 .myImage img {
     height: 400px;
 }
-
 
 
 
