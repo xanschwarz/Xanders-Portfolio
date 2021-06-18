@@ -1,16 +1,27 @@
-/* Note the following color scheme, from darkest to lightest.
-0D1321      1D2D44      3E5C76      748CAB      F0EBD8 */
+/* Set color scheme for page. If any are not used for final product, delete them. */
+:root {
+    --darkest: #0D1321;
+    --darker: #1D2D44;
+    --mid: #3E5C76;
+    --lighter: #748CAB;
+    --lightest: #F0EBD8;
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+}
 
 header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:1%;
-    background-color:#0D1321;
-    color:#F0EBD8;
+    padding:2%;
+    background-color: var(--darkest);
+    color: var(--lightest);
 }
 
-h1 {
+header h1 {
     font-size: 300%;
 }
 
@@ -20,53 +31,63 @@ nav ul {
     min-width:300px;
 }
 
-/* alternatively you could do the below instead of using min-width for the nav ul. */
-/* nav li {
-    margin-right:75px;
-} */
-
 nav a {
-    color:#F0EBD8;
+    color: var(--lightest);
     font-weight: bold;
     text-decoration: none;
 }
 
 nav a:hover {
-    color:#748CAB;
+    color: var(--lighter);
 }
 
 body {
-    background-color: #3E5C76;
-    color: #F0EBD8;
+    background-color: var(--mid);
+    color:  var(--lightest);
 }
 
 .myImage {
     text-align: center;
+    background-color:var(--darker);
 }
 
 .myImage img {
     height: 400px;
 }
 
+#AboutMe {
+    display:flex;
+    padding: 2%;
+}
 
+aside {
+    flex: 34%;
+    flex-wrap: wrap;
+    border-right-style:solid;
+    border-width:4px;
+    border-color: var(--darkest);
+}
 
+#AboutMe section {
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
 
+#MyWork {
+    display:flex;
+    padding: 2%;
+}
 
-
-
-
-
-
-
-
-
-
+#MyWork section {
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
 
 footer {
     display:flex;
     justify-content:center;
-    padding:1%;
-    background-color:#0D1321;
+    padding:2%;
+    background-color: var(--darkest);
 }
 
 footer ul {
@@ -76,7 +97,28 @@ footer ul {
 }
 
 footer a, li {
-    color:#F0EBD8;
+    color: var(--lightest);
     font-weight: bold;
     text-decoration: none;
 }
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+    /* header {
+      background: #772014;
+    } */
+  }
+  
+  /* Large smartphones */
+  @media screen and (max-width: 768px) {
+    /* nav {
+      background-color: #bb8588;
+    } */
+  }
+  
+  /* Small smartphones */
+  @media screen and (max-width: 576px) {
+    /* .sample-img {
+      background-color: #8ac4ff;
+    } */
+  }

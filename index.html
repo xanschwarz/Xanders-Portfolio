@@ -11,14 +11,14 @@
   </head>
 
   <body>
-    <!-- May need to separate header and nav bar for different screen sizes. -->
+    <!-- May want to separate header and nav bar for responsive design. -->
     <header>
         <h1>Xander Schwarz</h1>
         <nav>
           <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#AboutMe">About Me</a></li>
+            <li><a href="#MyWork">My Work</a></li>
+            <li><a href="#ContactMe">Contact Me</a></li>
           </ul>
         </nav>        
     </header>
@@ -30,23 +30,53 @@
 
     <main>
       <!-- About me section to be further fleshed out after more page structure and style is completed. -->
-      <h3>About Me:</h3>
-      <p>
-        I am an aspiring software developer, currently attending UCSD Extension Coding Bootcamp. Before this I completed a B.S. degree in Structural Engineering at UCSD, then worked for 3 years as an aerospace engineer for Collins Aerospace through an engineering services company.
-      </p>
-      <p>
-        I was born and raised in San Diego, but I have family across the states and more distant relatives in Europe. During my free time I enjoy traveling, photography, reading, and gaming. I can frequently be found lifting in the gym but also love the outdoors. When I have the time I love to homebrew beer as well as the occasional mead and hard cider, I've even won awards at the local fair and placed in the first round of the largest national competition.
-      </p>
+      <section id="AboutMe">
+        <aside>
+          <h3>About Me:</h3>
+        </aside>
+
+        <section>
+          <p>
+            I am an aspiring software developer, currently attending UCSD Extension Coding Bootcamp. Before this I completed a B.S. degree in Structural Engineering at UCSD, then worked for 3 years as an aerospace engineer for Collins Aerospace through an engineering services company.
+          </p>
+          <br>
+          <p>
+            I was born and raised in San Diego, but I have family across the states and more distant relatives in Europe. During my free time I enjoy traveling, photography, reading, and gaming. I can frequently be found lifting in the gym but also love the outdoors. When I have the time I love to homebrew beer as well as the occasional mead and hard cider, I've even won awards at the local fair and placed in the first round of the largest national competition.
+          </p>
+        </section>
+      </section>
+
+      <section id="MyWork">
+        <aside>
+          <h3>My Work:</h3>
+        </aside>
+
+        <section id="MyWorkCards">
+          <section class="firstCard">
+            <a href="https://xanschwarz.github.io/Horiseon-Optimization/">Horiseon Optimization</a>
+          </section>
+          <section class="card">
+            <a href="https://xanschwarz.github.io/prework-about-me/">Pre-Work About Me</a>
+          </section>
+          <section class="card">
+            <a href="xanschwarz.github.io/Xanders-Portfolio/">Xander's Portfolio</a>
+          </section>
+        </section>
+
+      </section>
+
+      
+
     </main>
 
     <footer>
-      <ul>
+      <ul id="ContactMe">
         <!-- Placeholder phone number and email for now. -->
-        <li>(555) 555-1234</li>
+        <li>(858) 213-6061</li>
         <li><a href="https://www.linkedin.com/in/alexander-schwarz-e-i-t-158b5a132">Xander's LinkedIn</a></li>
         <!-- Note the following link shouldn't work until the page is finished. -->
         <li><a href="xanschwarz.github.io/Xanders-Portfolio/">GitHub</a></li>
-        <li>email@address.com</li>
+        <li>xanschwarz@gmail.com</li>
       </ul>
     </footer>
   </body>
