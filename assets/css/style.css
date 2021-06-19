@@ -57,31 +57,88 @@ body {
 
 #AboutMe {
     display:flex;
-    padding: 2%;
 }
 
-aside {
-    flex: 34%;
+#AboutMe aside {
+    flex: 20%;
     flex-wrap: wrap;
+    margin:1%;
     border-right-style:solid;
     border-width:4px;
     border-color: var(--darkest);
 }
 
 #AboutMe section {
-    margin-left: 2%;
+    flex: 80%;
     flex-wrap: wrap;
+    margin:1%;
 }
 
+/* For future revision: add hover pseudo to the My Work links. */
 #MyWork {
     display:flex;
-    padding: 2%;
 }
 
-#MyWork section {
-    margin-left: 2%;
+#MyWork aside {
+    flex: 20%;
     flex-wrap: wrap;
+    margin:1%;
+    border-right-style:solid;
+    border-width:4px;
+    border-color: var(--darkest);
 }
+
+#MyWork > section {
+    flex: 80%;
+    flex-wrap: wrap;
+    margin:1%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.largeCard {
+    position:relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:var(--lighter);
+    background-color: var(--darker);
+    margin-bottom:1%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+  
+.smallCard {
+    position:relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color:var(--lighter);
+    background-color: var(--darker);
+    margin-bottom:1%;
+    width: 49%;
+    display:flex;
+    justify-content: center;
+}
+
+#MyWork img {
+    display:block;
+    max-width:100%;
+    max-height:100%;
+    opacity:30%;
+}
+
+.MyWorkTitles {
+    position:absolute;
+    flex-wrap:wrap;
+    top:10px;
+    left:10px;
+    padding:1%;
+    color:var(--lightest);
+    background-color:var(--darkest);
+}
+
+
+
 
 footer {
     display:flex;
@@ -104,21 +161,37 @@ footer a, li {
 
 /* Tablets */
 @media screen and (max-width: 992px) {
-    /* header {
-      background: #772014;
-    } */
-  }
+    
+}
   
-  /* Large smartphones */
-  @media screen and (max-width: 768px) {
-    /* nav {
-      background-color: #bb8588;
-    } */
-  }
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+    
+}
   
   /* Small smartphones */
-  @media screen and (max-width: 576px) {
-    /* .sample-img {
-      background-color: #8ac4ff;
-    } */
-  }
+@media screen and (max-width: 576px) {
+    header {
+        display:block;
+        text-align:center;
+    }
+    
+    header h1 {
+        font-size: 200%;
+    }
+
+    header a {
+        font-size: 80%;
+    }
+
+    footer ul {
+        font-size:80%;
+        /* justify-content: between; */
+        min-width:0;
+    }
+
+    footer li {
+        flex-wrap:wrap;
+        flex:50%;
+    }
+}

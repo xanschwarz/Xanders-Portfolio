@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xander's Portfolio | Web Developer</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <!-- May want to add a reset css in the future for more style customization.  -->
+    <!-- For future revision: may want to add a reset css in the future for more style customization.  -->
   </head>
 
   <body>
-    <!-- May want to separate header and nav bar for responsive design. -->
+    <!-- For future revision: may want to separate header and nav bar for responsive design. -->
     <header>
         <h1>Xander Schwarz</h1>
         <nav>
@@ -23,19 +23,19 @@
         </nav>        
     </header>
 
-    <!-- Add image below nav bar. Once other requirements are done see about adding page subtitle in one lower corner. -->
+    <!-- To do: change to personal picture. Once other requirements are done see about adding page subtitle in one lower corner. -->
     <section class="myImage">
       <img src="./assets/images/placeholder.jpg" alt="This is a placeholder image where my own will go"/>
     </section>
 
     <main>
-      <!-- About me section to be further fleshed out after more page structure and style is completed. -->
+      <!-- For future revision: further flesh out About Me section. -->
       <section id="AboutMe">
         <aside>
           <h3>About Me:</h3>
         </aside>
 
-        <section>
+        <section id="AboutMeText">
           <p>
             I am an aspiring software developer, currently attending UCSD Extension Coding Bootcamp. Before this I completed a B.S. degree in Structural Engineering at UCSD, then worked for 3 years as an aerospace engineer for Collins Aerospace through an engineering services company.
           </p>
@@ -52,29 +52,42 @@
         </aside>
 
         <section id="MyWorkCards">
-          <section class="firstCard">
-            <a href="https://xanschwarz.github.io/Horiseon-Optimization/">Horiseon Optimization</a>
+          <section class="largeCard">
+            <a href="https://xanschwarz.github.io/Horiseon-Optimization/">
+              <h2 class="MyWorkTitles">
+                Horiseon Optimization Assignment
+              </h2>
+              <img src="./assets/images/Horiseon.JPG" alt="Image of Horiseon Optimization page"/>
+            </a>
           </section>
-          <section class="card">
-            <a href="https://xanschwarz.github.io/prework-about-me/">Pre-Work About Me</a>
+          <section class="smallCard">
+            <a href="https://xanschwarz.github.io/prework-about-me/">
+              <h2 class="MyWorkTitles">
+                Pre Work About Me
+              </h2>
+              <img src="./assets/images/PreWork.JPG" alt="Image of Pre Work About Me page"/>
+            </a>
           </section>
-          <section class="card">
-            <a href="xanschwarz.github.io/Xanders-Portfolio/">Xander's Portfolio</a>
+          <section class="smallCard">
+            <a href="xanschwarz.github.io/Xanders-Portfolio/">
+              <h2 class="MyWorkTitles">
+                My Portfolio
+              </h2>
+              <!-- To do: update to picture of this page. -->
+              <img src="./assets/images/PreWork.JPG" alt="Image of this page"/>
+            </a>
           </section>
         </section>
 
       </section>
 
-      
-
     </main>
 
     <footer>
       <ul id="ContactMe">
-        <!-- Placeholder phone number and email for now. -->
         <li>(858) 213-6061</li>
         <li><a href="https://www.linkedin.com/in/alexander-schwarz-e-i-t-158b5a132">Xander's LinkedIn</a></li>
-        <!-- Note the following link shouldn't work until the page is finished. -->
+        <!-- To do: check that the following link works after the page is finished. -->
         <li><a href="xanschwarz.github.io/Xanders-Portfolio/">GitHub</a></li>
         <li>xanschwarz@gmail.com</li>
       </ul>
