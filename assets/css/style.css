@@ -242,11 +242,13 @@ For the phone screen sizes a different layout was set to allow a better flow for
     
     .largeCard {
         width: 85%;
+        min-height:300px;
     }
       
     .smallCard {
         margin:1%;
         width: 41.5%;
+        min-height:150px;
     }
 
     footer ul {
