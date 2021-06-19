@@ -25,6 +25,12 @@ header h1 {
     font-size: 300%;
 }
 
+/* For future revision: Below will be covered by reset file. */
+ul {
+    list-style:none;
+    padding-inline-start:0px;
+}
+
 nav ul {
     display:flex;
     justify-content: space-between;
@@ -47,12 +53,12 @@ body {
 }
 
 .myImage {
-    text-align: center;
+    text-align:center;
     background-color:var(--darker);
 }
 
 .myImage img {
-    height: 400px;
+    height:600px;
 }
 
 #AboutMe {
@@ -137,9 +143,6 @@ body {
     background-color:var(--darkest);
 }
 
-
-
-
 footer {
     display:flex;
     justify-content:center;
@@ -159,39 +162,110 @@ footer a, li {
     text-decoration: none;
 }
 
-/* Tablets */
-@media screen and (max-width: 992px) {
-    
-}
-  
-/* Large smartphones */
+/* Below is for large smartphones. Tablets (max-width: 992px) were found to be satisfactory with the full screen layout at this time. */
 @media screen and (max-width: 768px) {
-    
-}
-  
-  /* Small smartphones */
-@media screen and (max-width: 576px) {
     header {
         display:block;
         text-align:center;
     }
     
     header h1 {
+        font-size: 250%;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav a {
+        font-size:90%;
+    }
+
+    .myImage img {
+        height: 480px;
+    }
+
+    #AboutMe {
+        flex-wrap: wrap;
+        font-size:95%;
+    }
+    
+    #AboutMe aside {
+        flex: 100%;
+        padding:1%;
+        border-bottom-style:double;
+        border-right-style:none;
+        text-align: center;
+    }
+    
+    #AboutMe section {
+        flex: 100%;
+        margin:2%;
+    }
+
+    #MyWork {
+        flex-wrap: wrap;
+        font-size:95%;
+    }
+    
+    #MyWork aside {
+        flex: 100%;
+        padding:1%;
+        border-bottom-style:double;
+        border-right-style:none;
+        text-align: center;
+    }
+    
+    #MyWork > section {
+        flex: 100%;
+        margin:1%;
+        justify-content: center;
+    }
+    
+    .largeCard {
+        width: 85%;
+    }
+      
+    .smallCard {
+        margin:1%;
+        width: 41.5%;
+    }
+
+    footer ul {
+        font-size:90%;
+        display:block;
+        text-align:center;
+    }
+
+    footer li {
+        margin:1.5%;
+    }
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+    header h1 {
         font-size: 200%;
     }
 
-    header a {
+    nav a {
         font-size: 80%;
+    }
+
+    .myImage img {
+        height: 360px;
+    }
+    
+    .largeCard {
+        width: 80%;
+    }
+      
+    .smallCard {
+        margin:1%;
+        width: 39%;
     }
 
     footer ul {
         font-size:80%;
-        /* justify-content: between; */
-        min-width:0;
-    }
-
-    footer li {
-        flex-wrap:wrap;
-        flex:50%;
     }
 }
