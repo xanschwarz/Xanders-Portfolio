@@ -1,3 +1,6 @@
+/* I intend to use a reset CSS with this project. This will require some further styling.
+Additionally I have not yet consolidated and cleaned up the CSS. */
+
 /* Set color scheme for page. If any are not used for final product, delete them. */
 :root {
     --darkest: #0D1321;
@@ -7,11 +10,20 @@
     --lightest: #F0EBD8;
 }
 
+/* Set universal properties. */
 * {
     box-sizing:border-box;
     margin:0;
+    
 }
 
+/* Set body properties. */
+body {
+    background-color: var(--mid);
+    color:  var(--lightest);
+}
+
+/* Set flex, color, and spacing properties for the header and contained elements. */
 header {
     display:flex;
     justify-content: space-between;
@@ -25,7 +37,7 @@ header h1 {
     font-size: 300%;
 }
 
-/* For future revision: Below will be covered by reset file. */
+/* For future revision: these ul properties will be covered by reset file. */
 ul {
     list-style:none;
     padding-inline-start:0px;
@@ -47,11 +59,7 @@ nav a:hover {
     color: var(--lighter);
 }
 
-body {
-    background-color: var(--mid);
-    color:  var(--lightest);
-}
-
+/* Properties for the image of myself that appears below the header. */
 .myImage {
     text-align:center;
     background-color:var(--darker);
@@ -61,6 +69,7 @@ body {
     height:600px;
 }
 
+/* Properties for the About Me section. These include the flex, color, layout, as well as the divider between the aside and the interior section. */
 #AboutMe {
     display:flex;
 }
@@ -80,6 +89,7 @@ body {
     margin:1%;
 }
 
+/* Properties for the My Work section. These include the flex, color, layout, as well as the divider between the aside and the interior section. */
 /* For future revision: add hover pseudo to the My Work links. */
 #MyWork {
     display:flex;
@@ -94,6 +104,7 @@ body {
     border-color: var(--darkest);
 }
 
+/* This sets the flex and layout properties for the section containing the link cards, within the My Work section. */
 #MyWork > section {
     flex: 80%;
     flex-wrap: wrap;
@@ -102,6 +113,7 @@ body {
     justify-content: space-between;
 }
 
+/* This sets the properties for the first card in the section. It allows this card to appear larger than the others. */
 .largeCard {
     position:relative;
     border-style: solid;
@@ -113,7 +125,8 @@ body {
     display:flex;
     justify-content: center;
 }
-  
+
+/* This sets the properties for all other cards. As the course progresses, I expect more work to be added. */
 .smallCard {
     position:relative;
     border-style: solid;
@@ -133,6 +146,7 @@ body {
     opacity:30%;
 }
 
+/* This sets location and colors for the titles of each work link. */
 .MyWorkTitles {
     position:absolute;
     flex-wrap:wrap;
@@ -143,6 +157,7 @@ body {
     background-color:var(--darkest);
 }
 
+/* Set flex, color, and spacing properties for the footer and contained elements. */
 footer {
     display:flex;
     justify-content:center;
@@ -162,8 +177,11 @@ footer a, li {
     text-decoration: none;
 }
 
+/* Following are the media queries for Responsive Design. Effort was made to only set or change necessary attributes.
+For the phone screen sizes a different layout was set to allow a better flow for the user. */
 /* Below is for large smartphones. Tablets (max-width: 992px) were found to be satisfactory with the full screen layout at this time. */
 @media screen and (max-width: 768px) {
+    /* The profile image and text sizes were decreased and the layout was changed to a more vertical flow to accomodate the smaller screen size. */
     header {
         display:block;
         text-align:center;
@@ -243,6 +261,7 @@ footer a, li {
 }
 
 /* Small smartphones */
+/* The layout from the large smartphones was found to be satisfactory for small smartphones as well. Sizes were adjusted to accommodate. */
 @media screen and (max-width: 576px) {
     header h1 {
         font-size: 200%;
