@@ -1,20 +1,10 @@
-/* I intend to use a reset CSS with this project. This will require some further styling.
-Additionally I have not yet consolidated and cleaned up the CSS. */
-
-/* Set color scheme for page. If any are not used for final product, delete them. */
+/* Set color scheme for page. */
 :root {
     --darkest: #0D1321;
     --darker: #1D2D44;
     --mid: #3E5C76;
     --lighter: #748CAB;
     --lightest: #F0EBD8;
-}
-
-/* Set universal properties. */
-* {
-    box-sizing:border-box;
-    margin:0;
-    
 }
 
 /* Set body properties. */
@@ -35,12 +25,6 @@ header {
 
 header h1 {
     font-size: 300%;
-}
-
-/* For future revision: these ul properties will be covered by reset file. */
-ul {
-    list-style:none;
-    padding-inline-start:0px;
 }
 
 nav ul {
@@ -69,12 +53,15 @@ nav a:hover {
     height:600px;
 }
 
-/* Properties for the About Me section. These include the flex, color, layout, as well as the divider between the aside and the interior section. */
-#AboutMe {
+/* Properties for the About Me and My Work sections. These include the flex, color, layout, as well as the
+divider between the aside and the interior section. */
+#AboutMe,
+#MyWork {
     display:flex;
 }
 
-#AboutMe aside {
+#AboutMe aside,
+#MyWork aside {
     flex: 20%;
     flex-wrap: wrap;
     margin:1%;
@@ -87,21 +74,6 @@ nav a:hover {
     flex: 80%;
     flex-wrap: wrap;
     margin:1%;
-}
-
-/* Properties for the My Work section. These include the flex, color, layout, as well as the divider between the aside and the interior section. */
-/* For future revision: add hover pseudo to the My Work links. */
-#MyWork {
-    display:flex;
-}
-
-#MyWork aside {
-    flex: 20%;
-    flex-wrap: wrap;
-    margin:1%;
-    border-right-style:solid;
-    border-width:4px;
-    border-color: var(--darkest);
 }
 
 /* This sets the flex and layout properties for the section containing the link cards, within the My Work section. */
@@ -118,7 +90,7 @@ nav a:hover {
     position:relative;
     border-style: solid;
     border-width: 2px;
-    border-color:var(--lighter);
+    border-color: var(--lighter);
     background-color: var(--darker);
     margin-bottom:1%;
     width: 100%;
@@ -126,7 +98,7 @@ nav a:hover {
     justify-content: center;
 }
 
-/* This sets the properties for all other cards. As the course progresses, I expect more work to be added. */
+/* This sets the properties for all other cards. To be updated with future work. */
 .smallCard {
     position:relative;
     border-style: solid;
@@ -137,6 +109,13 @@ nav a:hover {
     width: 49%;
     display:flex;
     justify-content: center;
+}
+
+
+.largeCard:hover,
+.smallCard:hover {
+    border-width: 4px;
+    border-color: var(--lightest);
 }
 
 #MyWork img {
@@ -177,6 +156,10 @@ footer a, li {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--mid);
+}
+
 /* Following are the media queries for Responsive Design. Effort was made to only set or change necessary attributes.
 For the phone screen sizes a different layout was set to allow a better flow for the user. */
 /* Below is for large smartphones. Tablets (max-width: 992px) were found to be satisfactory with the full screen layout at this time. */
@@ -193,6 +176,9 @@ For the phone screen sizes a different layout was set to allow a better flow for
 
     nav ul {
         justify-content: space-around;
+        margin-left: 5%;
+        margin-right: 5%;
+        min-width: auto;
     }
 
     nav a {
@@ -200,15 +186,18 @@ For the phone screen sizes a different layout was set to allow a better flow for
     }
 
     .myImage img {
-        height: 480px;
+        height: auto;
+        width: 60%;
     }
 
-    #AboutMe {
+    #AboutMe,
+    #MyWork {
         flex-wrap: wrap;
-        font-size:95%;
+        font-size: 95%;
     }
     
-    #AboutMe aside {
+    #AboutMe aside,
+    #MyWork aside {
         flex: 100%;
         padding:1%;
         border-bottom-style:double;
@@ -219,19 +208,6 @@ For the phone screen sizes a different layout was set to allow a better flow for
     #AboutMe section {
         flex: 100%;
         margin:2%;
-    }
-
-    #MyWork {
-        flex-wrap: wrap;
-        font-size:95%;
-    }
-    
-    #MyWork aside {
-        flex: 100%;
-        padding:1%;
-        border-bottom-style:double;
-        border-right-style:none;
-        text-align: center;
     }
     
     #MyWork > section {
@@ -253,6 +229,7 @@ For the phone screen sizes a different layout was set to allow a better flow for
         font-size:90%;
         display:block;
         text-align:center;
+        min-width: auto;
     }
 
     footer li {
@@ -270,17 +247,12 @@ For the phone screen sizes a different layout was set to allow a better flow for
     nav a {
         font-size: 80%;
     }
-
-    .myImage img {
-        height: 360px;
-    }
     
     .largeCard {
         width: 80%;
     }
       
     .smallCard {
-        margin:1%;
         width: 39%;
     }
 
