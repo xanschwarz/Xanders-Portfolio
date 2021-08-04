@@ -76,6 +76,14 @@ divider between the aside and the interior section. */
     margin:1%;
 }
 
+#AboutMe a {
+    color: var(--lightest);
+}
+
+#AboutMe a:hover {
+    color: var(--lighter);
+}
+
 /* This sets the flex and layout properties for the section containing the link cards, within the My Work section. */
 #MyWork section {
     flex: 80%;
