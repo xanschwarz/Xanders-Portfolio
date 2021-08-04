@@ -144,6 +144,16 @@ divider between the aside and the interior section. */
     background-color:var(--darkest);
 }
 
+.MyWorkTitlesGitHub {
+    position:absolute;
+    flex-wrap:wrap;
+    top:10px;
+    right:10px;
+    padding:1%;
+    color:var(--lightest);
+    background-color:var(--darkest);
+}
+
 /* Set flex, color, and spacing properties for the footer and contained elements. */
 footer {
     display:flex;
