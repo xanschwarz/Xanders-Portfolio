@@ -1,280 +1,283 @@
 /* Set color scheme for page. */
 :root {
-    --darkest: #0D1321;
-    --darker: #1D2D44;
-    --mid: #3E5C76;
-    --lighter: #748CAB;
-    --lightest: #F0EBD8;
+  --darkest: #0d1321;
+  --darker: #1d2d44;
+  --mid: #3e5c76;
+  --lighter: #748cab;
+  --lightest: #f0ebd8;
 }
 
 /* Set body properties. */
 body {
-    background-color: var(--mid);
-    color:  var(--lightest);
+  background-color: var(--mid);
+  color: var(--lightest);
 }
 
 /* Set flex, color, and spacing properties for the header and contained elements. */
 header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:2%;
-    background-color: var(--darkest);
-    color: var(--lightest);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  background-color: var(--darkest);
+  color: var(--lightest);
 }
 
 header h1 {
-    font-size: 300%;
+  font-size: 300%;
 }
 
 nav ul {
-    display:flex;
-    justify-content: space-between;
-    min-width:300px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
 }
 
 nav a {
-    color: var(--lightest);
-    font-weight: bold;
-    text-decoration: none;
+  color: var(--lightest);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 nav a:hover {
-    color: var(--lighter);
+  color: var(--lighter);
 }
 
 /* Properties for the image of myself that appears below the header. */
 .myImage {
-    text-align:center;
-    background-color:var(--darker);
+  text-align: center;
+  background-color: var(--darker);
 }
 
 .myImage img {
-    height:600px;
+  height: 600px;
 }
 
 /* Properties for the About Me and My Work sections. These include the flex, color, layout, as well as the
 divider between the aside and the interior section. */
 #AboutMe,
 #MyWork {
-    display:flex;
+  display: flex;
 }
 
 #AboutMe aside,
 #MyWork aside {
-    flex: 20%;
-    flex-wrap: wrap;
-    margin:1%;
-    border-right-style:solid;
-    border-width:4px;
-    border-color: var(--darkest);
+  flex: 20%;
+  flex-wrap: wrap;
+  margin: 1%;
+  border-right-style: solid;
+  border-width: 4px;
+  border-color: var(--darkest);
 }
 
 #AboutMe section {
-    flex: 80%;
-    flex-wrap: wrap;
-    margin:1%;
+  flex: 80%;
+  flex-wrap: wrap;
+  margin: 1%;
 }
 
 #AboutMe a {
-    color: var(--lightest);
+  color: var(--lightest);
 }
 
 #AboutMe a:hover {
-    color: var(--lighter);
+  color: var(--lighter);
 }
 
 /* This sets the flex and layout properties for the section containing the link cards, within the My Work section. */
 #MyWork section {
-    flex: 80%;
-    flex-wrap: wrap;
-    margin:1%;
-    display:flex;
-    justify-content: space-between;
+  flex: 80%;
+  flex-wrap: wrap;
+  margin: 1%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* This sets the properties for the first card in the section. It allows this card to appear larger than the others. */
 .largeCard {
-    position:relative;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--lighter);
-    background-color: var(--darker);
-    margin-bottom:1%;
-    width: 100%;
-    display:flex;
-    justify-content: center;
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--lighter);
+  background-color: var(--darker);
+  margin-bottom: 1%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* This sets the properties for all other cards. To be updated with future work. */
 .smallCard {
-    position:relative;
-    border-style: solid;
-    border-width: 2px;
-    border-color:var(--lighter);
-    background-color: var(--darker);
-    margin-bottom:1%;
-    width: 49%;
-    display:flex;
-    justify-content: center;
-}
-
-
-.largeCard:hover,
-.smallCard:hover {
-    border-width: 4px;
-    border-color: var(--lightest);
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--lighter);
+  background-color: var(--darker);
+  margin-bottom: 1%;
+  width: 49%;
+  display: flex;
+  justify-content: center;
 }
 
 #MyWork img {
-    display:block;
-    max-width:100%;
-    height:auto;
-    opacity:30%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* opacity messes up the z-index so the images appear over the links and the links can't be accessed depending on screen size. Need to find a work-around or omit */
+  /* opacity: 0.3; */
 }
 
 /* This sets location and colors for the titles of each work link. */
 .MyWorkTitles {
-    position:absolute;
-    flex-wrap:wrap;
-    top:10px;
-    left:10px;
-    padding:1%;
-    color:var(--lightest);
-    background-color:var(--darkest);
+  position: absolute;
+  flex-wrap: wrap;
+  top: 10px;
+  left: 10px;
+  padding: 1%;
+  color: var(--lightest);
+  background-color: var(--darkest);
 }
 
 .MyWorkTitlesGitHub {
-    position:absolute;
-    flex-wrap:wrap;
-    top:10px;
-    right:10px;
-    padding:1%;
-    color:var(--lightest);
-    background-color:var(--darkest);
+  position: absolute;
+  flex-wrap: wrap;
+  top: 10px;
+  right: 10px;
+  padding: 1%;
+  color: var(--lightest);
+  background-color: var(--darkest);
+}
+
+.MyWorkTitles:hover,
+.MyWorkTitlesGitHub:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-width: 4px;
+  border-color: var(--lightest);
 }
 
 /* Set flex, color, and spacing properties for the footer and contained elements. */
 footer {
-    display:flex;
-    justify-content:center;
-    padding:2%;
-    background-color: var(--darkest);
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: var(--darkest);
 }
 
 footer ul {
-    display:flex;
-    justify-content: space-between;
-    min-width:600px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
 }
 
-footer a, li {
-    color: var(--lightest);
-    font-weight: bold;
-    text-decoration: none;
+footer a,
+li {
+  color: var(--lightest);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--mid);
+  color: var(--mid);
 }
 
 /* Following are the media queries for Responsive Design. Effort was made to only set or change necessary attributes.
 For the phone screen sizes a different layout was set to allow a better flow for the user. */
 /* Below is for large smartphones. Tablets (max-width: 992px) were found to be satisfactory with the full screen layout at this time. */
 @media screen and (max-width: 768px) {
-    /* The profile image and text sizes were decreased and the layout was changed to a more vertical flow to accomodate the smaller screen size. */
-    header {
-        display:block;
-        text-align:center;
-    }
-    
-    header h1 {
-        font-size: 250%;
-    }
+  /* The profile image and text sizes were decreased and the layout was changed to a more vertical flow to accomodate the smaller screen size. */
+  header {
+    display: block;
+    text-align: center;
+  }
 
-    nav ul {
-        justify-content: space-around;
-        margin-left: 5%;
-        margin-right: 5%;
-        min-width: auto;
-    }
+  header h1 {
+    font-size: 250%;
+  }
 
-    nav a {
-        font-size:90%;
-    }
+  nav ul {
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width: auto;
+  }
 
-    .myImage img {
-        height: auto;
-        width: 60%;
-    }
+  nav a {
+    font-size: 90%;
+  }
 
-    #AboutMe,
-    #MyWork {
-        flex-wrap: wrap;
-        font-size: 95%;
-    }
-    
-    #AboutMe aside,
-    #MyWork aside {
-        flex: 100%;
-        padding:1%;
-        border-bottom-style:double;
-        border-right-style:none;
-        text-align: center;
-    }
-    
-    #AboutMe section {
-        flex: 100%;
-        margin:2%;
-    }
-    
-    #MyWork section {
-        flex: 100%;
-        margin:1%;
-        justify-content: center;
-    }
-    
-    .largeCard {
-        width: 85%;
-    }
-      
-    .smallCard {
-        margin:1%;
-        width: 41.5%;
-    }
+  .myImage img {
+    height: auto;
+    width: 60%;
+  }
 
-    footer ul {
-        font-size:90%;
-        display:block;
-        text-align:center;
-        min-width: auto;
-    }
+  #AboutMe,
+  #MyWork {
+    flex-wrap: wrap;
+    font-size: 95%;
+  }
 
-    footer li {
-        margin:1.5%;
-    }
+  #AboutMe aside,
+  #MyWork aside {
+    flex: 100%;
+    padding: 1%;
+    border-bottom-style: double;
+    border-right-style: none;
+    text-align: center;
+  }
+
+  #AboutMe section {
+    flex: 100%;
+    margin: 2%;
+  }
+
+  #MyWork section {
+    flex: 100%;
+    margin: 1%;
+    justify-content: center;
+  }
+
+  .largeCard {
+    width: 85%;
+  }
+
+  .smallCard {
+    margin: 1%;
+    width: 41.5%;
+  }
+
+  footer ul {
+    font-size: 90%;
+    display: block;
+    text-align: center;
+    min-width: auto;
+  }
+
+  footer li {
+    margin: 1.5%;
+  }
 }
 
 /* Small smartphones */
 /* The layout from the large smartphones was found to be satisfactory for small smartphones as well. Sizes were adjusted to accommodate. */
 @media screen and (max-width: 576px) {
-    header h1 {
-        font-size: 200%;
-    }
+  header h1 {
+    font-size: 200%;
+  }
 
-    nav a {
-        font-size: 80%;
-    }
-    
-    .largeCard {
-        width: 80%;
-    }
-      
-    .smallCard {
-        width: 39%;
-    }
+  nav a {
+    font-size: 80%;
+  }
 
-    footer ul {
-        font-size:80%;
-    }
+  .largeCard {
+    width: 80%;
+  }
+
+  .smallCard {
+    width: 39%;
+  }
+
+  footer ul {
+    font-size: 80%;
+  }
 }

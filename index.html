@@ -1,97 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xander's Portfolio | Web Developer</title>
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xander's Portfolio | Web Developer</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-  <body>
-    <!-- The header presents my name as well as a nav bar with links to areas on the page. -->
-    <header>
-        <h1>Xander Schwarz</h1>
-        <nav>
-          <ul>
-            <li><a href="#AboutMe">About Me</a></li>
-            <li><a href="#MyWork">My Work</a></li>
-            <li><a href="#ContactMe">Contact Me</a></li>
-          </ul>
-        </nav>        
-    </header>
+<body>
+  <!-- The header presents my name as well as a nav bar with links to areas on the page. -->
+  <header>
+    <h1>Xander Schwarz</h1>
+    <nav>
+      <ul>
+        <li><a href="#AboutMe">About Me</a></li>
+        <li><a href="#MyWork">My Work</a></li>
+        <li><a href="#ContactMe">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Below the header is a image of myself. -->
-    <section class="myImage">
-      <img src="./assets/images/Profile_Pic.jpg" alt="This is an image of myself on vacation."/>
+  <!-- Below the header is a image of myself. -->
+  <section class="myImage">
+    <img src="./assets/images/Profile_Pic.jpg" alt="This is an image of myself on vacation." />
+  </section>
+
+  <!-- The main block contains an About Me section and a My Work section. -->
+  <main>
+    <!-- The About Me section has an aside with the section title and an interior section with a brief description of myself. -->
+    <section id="AboutMe">
+      <aside>
+        <h3>About Me:</h3>
+      </aside>
+
+      <section id="AboutMeText">
+        <p>
+          I am an aspiring software developer, currently attending UCSD Extension Coding Bootcamp. Before this I
+          completed a B.S. degree in Structural Engineering at UCSD, then worked for 3 years as an aerospace engineer
+          for Collins Aerospace through an engineering services company.
+        </p>
+        <br>
+        <p>
+          I was born and raised in San Diego, but I have family across the states and more distant relatives in Europe.
+          During my free time I enjoy traveling, photography, reading, and gaming. I can frequently be found lifting in
+          the gym but also love the outdoors. When I have the time I love to homebrew beer as well as the occasional
+          mead and hard cider, I've even won awards at the local fair and placed in the first round of the largest
+          national competition.
+        </p>
+        <br>
+        <p>
+          For more professional information about me, feel free to check out my <a
+            href="./assets/resume/resume.pdf">resume</a>. Please note that I am currently in the process of updating it
+          from my previous field of Aerospace Engineering.
+        </p>
+      </section>
     </section>
 
-    <!-- The main block contains an About Me section and a My Work section. -->
-    <main>
-      <!-- The About Me section has an aside with the section title and an interior section with a brief description of myself. -->
-      <section id="AboutMe">
-        <aside>
-          <h3>About Me:</h3>
-        </aside>
+    <!-- The My Work section has an aside with the section title and an interior section with images representing links to my work. -->
+    <section id="MyWork">
+      <aside>
+        <h3>My Work:</h3>
+      </aside>
 
-        <section id="AboutMeText">
-          <p>
-            I am an aspiring software developer, currently attending UCSD Extension Coding Bootcamp. Before this I completed a B.S. degree in Structural Engineering at UCSD, then worked for 3 years as an aerospace engineer for Collins Aerospace through an engineering services company.
-          </p>
-          <br>
-          <p>
-            I was born and raised in San Diego, but I have family across the states and more distant relatives in Europe. During my free time I enjoy traveling, photography, reading, and gaming. I can frequently be found lifting in the gym but also love the outdoors. When I have the time I love to homebrew beer as well as the occasional mead and hard cider, I've even won awards at the local fair and placed in the first round of the largest national competition.
-          </p>
-          <br>
-          <p>
-            For more professional information about me, feel free to check out my <a href="./assets/resume/resume.pdf">resume</a>. Please note that I am currently in the process of updating it from my previous field of Aerospace Engineering.
-          </p>
-        </section>
-      </section>
-
-      <!-- The My Work section has an aside with the section title and an interior section with images representing links to my work. -->
-      <section id="MyWork">
-        <aside>
-          <h3>My Work:</h3>
-        </aside>
-        
-        <section id="MyWorkCards">
-          <!-- The My Work interior section consists of cards containing images that act as links to my work. Within the cards are also titles of the projects. -->
-          <a href="https://sbeltier.github.io/group-project-1-the-daily-laugh/" class="largeCard">
+      <section id="MyWorkCards">
+        <!-- The My Work interior section consists of cards containing images that act as links to my work. Within the cards are also titles of the projects. -->
+        <div class="largeCard">
+          <a href="https://sbeltier.github.io/group-project-1-the-daily-laugh/">
             <h2 class="MyWorkTitles">
               The DayLee Laugh Group Project
             </h2>
-            <img src="./assets/images/DayLeeLaugh.JPG" alt="Image of The DayLee Laugh page."/>
           </a>
+          <a href="https://github.com/sbeltier/group-project-1-the-daily-laugh/">
+            <h2 class="MyWorkTitlesGitHub">
+              The DayLee Laugh GitHub
+            </h2>
+          </a>
+          <div>
+            <img src="./assets/images/DayLeeLaugh.JPG" alt="Image of The DayLee Laugh page." />
+          </div>
+        </div>
+        </a>
 
-          <a href="https://xanschwarz.github.io/Weather_Dashboard/" class="smallCard">
+        <div class="smallCard">
+          <a href="https://xanschwarz.github.io/Weather_Dashboard/">
             <h2 class="MyWorkTitles">
               Weather Dashboard
             </h2>
-            <img src="./assets/images/WeatherDashboard.JPG" alt="Image of my Weather Dashboard page."/>
           </a>
+          <a href="https://github.com/xanschwarz/Weather_Dashboard/">
+            <h2 class="MyWorkTitlesGitHub">
+              Weather Dashboard GitHub
+            </h2>
+          </a>
+          <img src="./assets/images/WeatherDashboard.JPG" alt="Image of my Weather Dashboard page." />
+        </div>
 
-          <a href="https://xanschwarz.github.io/Work-Planner/" class="smallCard">
+        <div class="smallCard">
+          <a href="https://xanschwarz.github.io/Work-Planner/">
             <h2 class="MyWorkTitles">
               Work Day Planner
             </h2>
-            <img src="./assets/images/WorkPlanner.JPG" alt="Image of my Work Day Planner page."/>
           </a>
-        </section>
-      </section>
-    </main>
+          <a href="https://github.com/xanschwarz/Work-Planner/">
+            <h2 class="MyWorkTitlesGitHub">
+              Work Day Planner GitHub
+            </h2>
+          </a>
+          <img src="./assets/images/WorkPlanner.JPG" alt="Image of my Work Day Planner page." />
+        </div>
 
-    <!-- The footer includes a list of my contact information. -->
-    <footer>
-      <ul id="ContactMe">
-        <li>xanschwarz@gmail.com</li>
-        <li>(858) 213-6061</li>
-        <li><a href="https://github.com/xanschwarz/">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/alexander-schwarz-web-dev/">LinkedIn</a></li>
-        <li><a href="./assets/resume/resume.pdf">Resume</a></li>
-      </ul>
-    </footer>
-  </body>
+      </section>
+    </section>
+  </main>
+
+  <!-- The footer includes a list of my contact information. -->
+  <footer>
+    <ul id="ContactMe">
+      <li>xanschwarz@gmail.com</li>
+      <li>(858) 213-6061</li>
+      <li><a href="https://github.com/xanschwarz/">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/alexander-schwarz-web-dev/">LinkedIn</a></li>
+      <li><a href="./assets/resume/resume.pdf">Resume</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
